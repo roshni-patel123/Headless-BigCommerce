@@ -1,0 +1,36 @@
+.form p {
+  margin-bottom: 14px;
+  color: var(--text-soft);
+}
+
+.form div {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form input {
+  flex: 1;
+  min-width: 180px;
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 14px;
+  padding: 0 16px;
+  height: 48px;
+}
+
+.compact div {
+  justify-content: flex-start;
+}
+
+.compact input {
+  background: var(--bg);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+.compact button {
+  background: var(--primary);
+  color: #fff;
+}

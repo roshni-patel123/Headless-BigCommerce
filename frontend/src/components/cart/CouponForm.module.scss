@@ -1,0 +1,128 @@
+.root {
+  display: grid;
+  gap: 14px;
+  margin-top: 4px;
+}
+
+.compact {
+  margin: 0;
+  gap: 0;
+}
+
+.compact .section {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+}
+
+.section {
+  display: grid;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border, #e2e8f0);
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.label {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-soft, #64748b);
+}
+
+.root form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+}
+
+.root input {
+  border: 1px solid var(--border, #e2e8f0);
+  border-radius: 0.5rem;
+  padding: 0.55rem 0.75rem;
+  background: #fff;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.couponRow,
+.autoRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: var(--bg-soft, #f8fafc);
+}
+
+.couponRow div:first-child,
+.autoRow div:first-child {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.couponRow strong,
+.autoRow strong {
+  font-size: 0.9rem;
+  color: var(--text, #0f172a);
+  word-break: break-word;
+}
+
+.couponRow small,
+.autoRow small {
+  color: var(--text-soft, #64748b);
+  font-size: 0.75rem;
+}
+
+.rowEnd {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.amount {
+  color: var(--primary, #2563eb);
+  font-weight: 700;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.list button {
+  border: 0;
+  background: transparent;
+  color: var(--text-soft, #64748b);
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0;
+}
+
+.list button:hover {
+  color: var(--error, #b91c1c);
+}
+
+.hint {
+  margin: 0;
+  color: var(--text-soft, #64748b);
+  font-size: 0.82rem;
+}
+
+.error {
+  color: #b91c1c;
+  font-size: 0.85rem;
+  margin: 0;
+}

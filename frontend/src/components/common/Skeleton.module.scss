@@ -1,0 +1,42 @@
+.card,
+.hero {
+  background: linear-gradient(90deg, #e6eef7 25%, #f4f8fc 50%, #e6eef7 75%);
+  background-size: 200% 100%;
+  animation: shine 1.4s infinite;
+}
+
+.card {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.image {
+  aspect-ratio: 1 / 1;
+  background: inherit;
+}
+
+.line {
+  height: 12px;
+  margin: 12px 8px;
+  border-radius: 99px;
+  background: #d5e0ec;
+}
+
+.short {
+  width: 40%;
+}
+
+.hero {
+  height: 46vh;
+  border-radius: 22px;
+  margin-bottom: 32px;
+}
+
+.page {
+  padding: 24px 0;
+}
+
+@keyframes shine {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

@@ -1,0 +1,14 @@
+.wrap {
+  text-align: center;
+  padding: 80px 16px;
+}
+
+.wrap h2 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  margin-bottom: 12px;
+}
+
+.wrap p {
+  color: var(--muted);
+  margin-bottom: 24px;
+}

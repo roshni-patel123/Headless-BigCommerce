@@ -1,0 +1,25 @@
+.shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.shell main {
+  flex: 1;
+  padding-top: var(--header);
+  padding-bottom: 84px;
+}
+
+.comparing main {
+  padding-bottom: 180px;
+}
+
+@media (min-width: 900px) {
+  .shell main {
+    padding-bottom: 0;
+  }
+
+  .comparing main {
+    padding-bottom: 120px;
+  }
+}

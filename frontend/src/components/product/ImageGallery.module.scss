@@ -1,0 +1,42 @@
+.gallery {
+  display: grid;
+  gap: 12px;
+}
+
+.stage {
+  overflow: hidden;
+  border-radius: 20px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  aspect-ratio: 1 / 1;
+}
+
+.stage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s var(--ease);
+}
+
+.stage:hover img {
+  transform: scale(1.35);
+}
+
+.thumbs {
+  display: flex;
+  gap: 8px;
+}
+
+.thumbs button {
+  width: 68px;
+  height: 84px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.thumbs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
